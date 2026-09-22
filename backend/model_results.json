@@ -1,0 +1,121 @@
+{
+  "Apple_efficientnet_model.pth": {
+    "num_keys": 360,
+    "arch": "EfficientNet or DeepLite",
+    "num_classes": 4,
+    "first_key": "features.0.0.weight",
+    "last_key": "classifier.1.bias"
+  },
+  "blueberry_model.pth": {
+    "num_keys": 32,
+    "arch": "Augmented/Improved(4)",
+    "num_classes": 1,
+    "first_key": "features.0.weight",
+    "last_key": "classifier.4.bias"
+  },
+  "cherry_model.pth": {
+    "num_keys": 32,
+    "arch": "Augmented/Improved(4)",
+    "num_classes": 2,
+    "first_key": "features.0.weight",
+    "last_key": "classifier.4.bias"
+  },
+  "corn_efficientnet_model.pth": {
+    "num_keys": 360,
+    "arch": "EfficientNet or DeepLite",
+    "num_classes": 4,
+    "first_key": "features.0.0.weight",
+    "last_key": "classifier.1.bias"
+  },
+  "grape_model.pth": {
+    "num_keys": 32,
+    "arch": "Augmented/Improved(4)",
+    "num_classes": 4,
+    "first_key": "features.0.weight",
+    "last_key": "classifier.4.bias"
+  },
+  "orange_model.pth": {
+    "num_keys": 32,
+    "arch": "Augmented/Improved(4)",
+    "num_classes": 1,
+    "first_key": "features.0.weight",
+    "last_key": "classifier.4.bias"
+  },
+  "peach_model.pth": {
+    "num_keys": 32,
+    "arch": "Augmented/Improved(4)",
+    "num_classes": 2,
+    "first_key": "features.0.weight",
+    "last_key": "classifier.4.bias"
+  },
+  "pepper bell_improved.pth": {
+    "num_keys": 8,
+    "arch": "SimpleCNN",
+    "num_classes": 2,
+    "first_key": "conv1.weight",
+    "last_key": "fc2.bias"
+  },
+  "pepperbell_model.pth": {
+    "num_keys": 8,
+    "arch": "SimpleCNN",
+    "num_classes": 2,
+    "first_key": "conv1.weight",
+    "last_key": "fc2.bias"
+  },
+  "potato_customCNN.pth": {
+    "num_keys": 8,
+    "arch": "SimpleCNN",
+    "num_classes": 3,
+    "first_key": "conv1.weight",
+    "last_key": "fc2.bias"
+  },
+  "potato_improved.pth": {
+    "num_keys": 8,
+    "arch": "SimpleCNN",
+    "num_classes": 2,
+    "first_key": "conv1.weight",
+    "last_key": "fc2.bias"
+  },
+  "raspberry_model.pth": {
+    "num_keys": 32,
+    "arch": "Augmented/Improved(4)",
+    "num_classes": 1,
+    "first_key": "features.0.weight",
+    "last_key": "classifier.4.bias"
+  },
+  "soyabean_model.pth": {
+    "num_keys": 32,
+    "arch": "Augmented/Improved(4)",
+    "num_classes": 1,
+    "first_key": "features.0.weight",
+    "last_key": "classifier.4.bias"
+  },
+  "squash_model.pth": {
+    "num_keys": 32,
+    "arch": "Augmented/Improved(4)",
+    "num_classes": 1,
+    "first_key": "features.0.weight",
+    "last_key": "classifier.4.bias"
+  },
+  "strawberry_model.pth": {
+    "num_keys": 32,
+    "arch": "Augmented/Improved(4)",
+    "num_classes": 2,
+    "first_key": "features.0.weight",
+    "last_key": "classifier.4.bias"
+  },
+  "Tomato_efficientnet_model.pth": {
+    "num_keys": 360,
+    "arch": "EfficientNet or DeepLite",
+    "num_classes": 10,
+    "first_key": "features.0.0.weight",
+    "last_key": "classifier.1.bias"
+  },
+  "tomato_resnet50.pth": {
+    "num_keys": 320,
+    "arch": "ResNet",
+    "num_classes": 10,
+    "first_key": "conv1.weight",
+    "last_key": "fc.bias"
+  }
+}

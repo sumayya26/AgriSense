@@ -1,0 +1,345 @@
+.history-page {
+  min-height: 100vh;
+  background: #f5f7f5;
+}
+
+/* Header */
+.hist-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+.hist-header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hist-back-btn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  transition: background 0.2s;
+}
+
+.hist-back-btn:hover {
+  background: #f0f0f0;
+}
+
+.hist-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hist-logo-icon {
+  width: 32px;
+  height: 32px;
+  background: #3a7d44;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hist-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a1a;
+  font-family: 'Inter', sans-serif;
+}
+
+.hist-header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.hist-count {
+  font-size: 13px;
+  color: #999;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+}
+
+.hist-clear-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border: 1.5px solid #ffcdd2;
+  border-radius: 8px;
+  background: white;
+  color: #c62828;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.2s;
+}
+
+.hist-clear-btn:hover {
+  background: #ffebee;
+}
+
+/* Content */
+.hist-content {
+  max-width: 800px;
+  margin: 28px auto;
+  padding: 0 32px;
+}
+
+/* Empty state */
+.hist-empty {
+  text-align: center;
+  padding: 80px 20px;
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #eee;
+}
+
+.hist-empty-icon {
+  margin-bottom: 20px;
+}
+
+.hist-empty h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+  font-family: 'Inter', sans-serif;
+}
+
+.hist-empty p {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 24px;
+  font-family: 'Inter', sans-serif;
+}
+
+.hist-scan-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  background: #3a7d44;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: 'Inter', sans-serif;
+}
+
+.hist-scan-btn:hover {
+  background: #2d6235;
+  transform: translateY(-1px);
+}
+
+/* History list */
+.hist-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hist-card {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+
+.hist-card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.hist-card-main {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.hist-card-main:hover {
+  background: #fafafa;
+}
+
+.hist-thumb {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid #eee;
+}
+
+.hist-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.hist-disease-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a1a;
+  font-family: 'Inter', sans-serif;
+}
+
+.hist-date {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 2px;
+  font-family: 'Inter', sans-serif;
+}
+
+.hist-badges {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hist-sev-badge {
+  padding: 3px 12px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+}
+
+.hsev-none { background: #e8f5e9; color: #2e7d32; }
+.hsev-low { background: #e8f5e9; color: #2e7d32; }
+.hsev-moderate { background: #fff8e1; color: #f9a825; }
+.hsev-high { background: #ffebee; color: #c62828; }
+
+.hist-conf-badge {
+  font-size: 12px;
+  font-weight: 700;
+  color: #1565c0;
+  font-family: 'Inter', sans-serif;
+}
+
+.hist-chevron {
+  transition: transform 0.2s;
+  min-width: 16px;
+}
+
+.hist-card-expanded .hist-chevron {
+  transform: rotate(180deg);
+}
+
+/* Expanded details */
+.hist-card-details {
+  padding: 0 20px 20px;
+  border-top: 1px solid #f0f0f0;
+  animation: slideDown 0.25s ease;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; max-height: 0; }
+  to { opacity: 1; max-height: 600px; }
+}
+
+.hist-desc {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.7;
+  margin: 16px 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.hist-treatment h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+  font-family: 'Inter', sans-serif;
+}
+
+.hist-treatment ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hist-treatment li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 13px;
+  color: #555;
+  line-height: 1.5;
+  font-family: 'Inter', sans-serif;
+}
+
+.hist-treatment li svg {
+  min-width: 14px;
+  margin-top: 2px;
+}
+
+.hist-delete-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background: white;
+  color: #c62828;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  margin-top: 16px;
+  transition: all 0.2s;
+}
+
+.hist-delete-btn:hover {
+  background: #ffebee;
+  border-color: #ffcdd2;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hist-header {
+    padding: 12px 16px;
+  }
+
+  .hist-content {
+    padding: 0 16px;
+    margin: 16px auto;
+  }
+
+  .hist-card-main {
+    padding: 12px 14px;
+    gap: 10px;
+  }
+
+  .hist-badges {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .hist-thumb {
+    width: 40px;
+    height: 40px;
+  }
+}

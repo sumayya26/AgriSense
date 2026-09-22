@@ -1,0 +1,119 @@
+.notfound-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5f7f5 0%, #e8f5e9 50%, #f0f4f0 100%);
+  padding: 40px 20px;
+}
+
+.notfound-content {
+  text-align: center;
+  max-width: 440px;
+}
+
+.notfound-leaf {
+  margin-bottom: 20px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(5deg); }
+}
+
+.notfound-code {
+  font-size: 100px;
+  font-weight: 900;
+  color: #3a7d44;
+  line-height: 1;
+  margin-bottom: 8px;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -4px;
+  opacity: 0.9;
+}
+
+.notfound-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+  font-family: 'Inter', sans-serif;
+}
+
+.notfound-desc {
+  font-size: 15px;
+  color: #777;
+  line-height: 1.7;
+  margin-bottom: 32px;
+  font-family: 'Inter', sans-serif;
+}
+
+.notfound-actions {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.notfound-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  background: #3a7d44;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.notfound-home:hover {
+  background: #2d6235;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(58, 125, 68, 0.3);
+}
+
+.notfound-back {
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 28px;
+  background: white;
+  color: #555;
+  border: 1.5px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.notfound-back:hover {
+  border-color: #3a7d44;
+  color: #3a7d44;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+  .notfound-code {
+    font-size: 72px;
+  }
+
+  .notfound-title {
+    font-size: 22px;
+  }
+
+  .notfound-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .notfound-home,
+  .notfound-back {
+    justify-content: center;
+  }
+}
